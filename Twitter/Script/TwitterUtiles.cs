@@ -10,11 +10,11 @@ using System.Security.Cryptography;
 public class TwitterUtiles : SingletonMonoBehaviour<TwitterUtiles> {
 
 	[SerializeField]
-	private string consumerKey = "KMPN9RxQ9ueyEMsYhsD14ELMi";
+	private string consumerKey;
 	public string ConsumerKey{get{return consumerKey;}}
 	
 	[SerializeField]
-	private string consumerSecret = "rJC9IZgf9ed3Cy6dhu5QTyY5iRBKVtFicxkz2n3q04BF2fndAM";
+	private string consumerSecret;
 	public string ConsumerSecret{get{return consumerSecret;}}
 
 	private static readonly string[] OAUTH_HEADER_PARAMS = new[]{
